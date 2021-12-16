@@ -296,11 +296,11 @@ header {
   cursor: pointer;
 }
 
-.menu-modal {
+/* .menu-modal {
   min-width: 336px;
   min-height: 304px;
   position: absolute;
-  visibility: hidden;
+  display: none;
   top: 25px;
   left: 0;
   margin: 21px auto 14px;
@@ -311,9 +311,23 @@ header {
   border: 1px solid #e7e8e8;
   box-shadow: 2px 2px 15px rgba(82, 128, 190, 0.1);
   border-radius: 8px;
-}
+} */
 
 .menu-list {
+  min-width: 336px;
+  min-height: 304px;
+  position: absolute;
+  display: none;
+  top: 25px;
+  left: 0;
+  margin: 21px auto 14px;
+  padding-top: 18px;
+  padding-bottom: 29px;
+
+  background: #ffffff;
+  border: 1px solid #e7e8e8;
+  box-shadow: 2px 2px 15px rgba(82, 128, 190, 0.1);
+  border-radius: 8px;
 }
 
 .menu-item {
@@ -407,6 +421,6 @@ header {
   padding-left: 58px;
 }
 
-.menu-modal .show-modal {
-  visibility: visible;
+.menu-list.show {
+  display: block;
 }

@@ -1,9 +1,10 @@
 const refs = {
-  openModalBtn: document.querySelector('[data-action="open-modal"]')
+  dropdownBtn: document.querySelector('.menu-btn'),
+  menuList: document.querySelector('.menu-list')
 };
-console.log(refs.openModalBtn);
-refs.openModalBtn.addEventListener('click', onOpenModal)
 
-function onOpenModal() {
-  document.modal.classList.add('show-modal');
+refs.dropdownBtn.addEventListener('click', onOpenDropdown)
+
+function onOpenDropdown() {
+  refs.menuList.classList.toggle('show');
 }
