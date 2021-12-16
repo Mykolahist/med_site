@@ -1,0 +1,75 @@
+  <!DOCTYPE html>
+  <html lang="ua">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Records</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-group">
+        <a href="/" class="logo">
+          <img src="./icons/logo_mini.svg" alt="логотип сайту">
+        </a>
+        <button type="button" class="header-btn">Записатись</button>
+        <img src="./icons/user.svg" alt="фото користувача" class="user">
+        <button type="button" class="more-btn"></button>
+      </div>
+    </header>
+    <section>
+      <div class="menu-container">
+        <div class="menu-dropdown">
+          <h1 class="menu-title">Профіль</h1>
+          <button type="button" class="menu-btn" data-action="open-modal"></button>
+        </div>
+        <div class="menu-modal">
+          <ul class="menu-list">
+            <li class="menu-item"><span class="menu-text">Записи</span></li>
+            <li class="menu-item"><span class="menu-text">Аналізи</span></li>
+            <li class="menu-item"><span class="menu-text">Аптека</span></li>
+            <li class="menu-item"><span class="menu-text">Сім’я</span></li>
+            <li class="menu-item"><span class="menu-text">Мед. карта</span></li>
+            <li class="menu-item"><span class="menu-text">Назначення</span></li>
+            <li class="menu-item"><span class="menu-text">Premium підписка</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="content-container">
+        <ul class="tabs">
+          <li class="tabs-item"><button type="button" class="tabs-btn">Всі записи</button></li>
+          <li class="tabs-item"><button type="button" class="tabs-btn">Клініки</button></li>
+          <li class="tabs-item"><button type="button" class="tabs-btn">Лікарі</button></li>
+          <!-- <li class="tabs-item"><button type="button" class="tabs-btn"></button></li> -->
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="content-container">
+        <ul class="date">
+          <li class="date-item">
+            <span class="date-text">Від:</span>
+            <span class="date-day">25.11.2021</span>
+          </li>
+          <li class="date-item">
+            <span class="date-text">До:</span>
+            <span class="date-day">25.11.2021</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="content-container">
+        <div class="appointment-container">
+          <h2 class="appointment-title">У Вас немає записів...</h2>
+          <img src="./Frame 36.jpg" alt="лікар із пацієнтом" class="appointment-pic" width="249" height="145">
+          <button type="button" class="appointment-btn">Записатись на прийом</button>
+        </div>
+      </div>
+    </section>
+    <script src="./modal.js"></script>
+  </body>
+  </html>

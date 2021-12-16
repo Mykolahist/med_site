@@ -1,0 +1,412 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 360;
+  margin: 0;
+  padding: 0;
+  /* font-family: "Montserrat", sans-serif; */
+  background: #f4f7fa;
+}
+
+ul,
+li,
+h1,
+h2,
+h3,
+button {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.content-container {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+header {
+  max-width: 360px;
+  margin: 0 auto 21px;
+
+  background: #ffffff;
+}
+
+.logo {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.header-group {
+  display: flex;
+  align-items: center;
+  padding: 9px 16px;
+}
+
+.header-btn {
+  min-width: 90px;
+  margin-right: 144px;
+  padding: 8px 12px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.27;
+
+  color: #0957c3;
+
+  background: rgba(9, 87, 195, 0.07);
+  border: 1px solid rgba(9, 87, 195, 0.07);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  border: 1px solid #0957c3;
+}
+
+.user {
+  width: 17px;
+  height: 17px;
+
+  margin-right: 27px;
+}
+
+.more-btn {
+  content: "";
+  width: 20px;
+  height: 20px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../icons/more.svg");
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-container {
+  max-width: 336px;
+  margin: 0 auto 14px;
+  position: relative;
+
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.menu-dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px 9px;
+}
+
+.menu-dropdown::before {
+  margin-right: 9px;
+  content: "";
+  width: 20px;
+  height: 20px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../icons/ico.svg");
+}
+
+.menu-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.28;
+
+  color: #333536;
+}
+
+.menu-btn {
+  margin-left: 200px;
+  content: "";
+  width: 10px;
+  height: 6px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../icons/arrow.svg");
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 21px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  background: #f4f7fa;
+}
+
+.tabs-btn {
+  min-width: 84px;
+  padding: 9px 23px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.31;
+  color: #000000;
+
+  background: #ffffff;
+  border: 1px solid #eff1f6;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.tabs-btn:hover,
+.tabs-btn:focus {
+  border: 1px solid #0957c3;
+}
+
+.tabs-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.date {
+  display: flex;
+  margin-bottom: 16px;
+  padding-left: 16px;
+}
+
+.date-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.date-item:not(:last-child) {
+  margin-right: 26px;
+}
+
+.date-text {
+  margin-right: 8px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.54;
+  text-align: center;
+
+  color: #333336;
+}
+
+.date-day::before {
+  margin-right: 10px;
+  content: "";
+  width: 13px;
+  height: 13px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../icons/calendar.svg");
+}
+
+.date-day {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 3px 9px;
+
+  font-weight: 400;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 1.54;
+  text-align: center;
+
+  color: #747578;
+
+  background: #ffffff;
+  border: 1px solid rgba(128, 142, 184, 0.07);
+  box-sizing: border-box;
+  box-shadow: 2px 2px 15px rgba(82, 128, 190, 0.1);
+  border-radius: 8px;
+}
+
+.appointment-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 328px;
+  margin: 0 auto 63px;
+
+  padding: 21px 29px;
+
+  background: #ffffff;
+  border: 1px solid rgba(33, 58, 133, 0.07);
+  box-sizing: border-box;
+  box-shadow: 2px 2px 15px rgba(82, 128, 190, 0.1);
+  border-radius: 8px;
+}
+
+.appointment-title {
+  text-align: center;
+  margin-bottom: 28px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.31;
+
+  color: #333536;
+}
+
+.appointment-pic {
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+.appointment-btn {
+  margin: 0 auto;
+  min-width: 176px;
+  padding: 12px 14px;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.56;
+  text-align: center;
+
+  color: #ffffff;
+
+  background: #0957c3;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.menu-modal {
+  min-width: 336px;
+  min-height: 304px;
+  position: absolute;
+  visibility: hidden;
+  top: 25px;
+  left: 0;
+  margin: 21px auto 14px;
+  padding-top: 18px;
+  padding-bottom: 29px;
+
+  background: #ffffff;
+  border: 1px solid #e7e8e8;
+  box-shadow: 2px 2px 15px rgba(82, 128, 190, 0.1);
+  border-radius: 8px;
+}
+
+.menu-list {
+}
+
+.menu-item {
+  display: flex;
+  position: relative;
+  padding: 3px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.28;
+
+  color: #333536;
+}
+
+.menu-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.menu-item::before {
+  display: block;
+  position: absolute;
+
+  content: "";
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-item:nth-child(1)::before {
+  width: 16px;
+  height: 19px;
+  left: 25px;
+  margin-right: 17px;
+  background-image: url("../icons/records.svg");
+}
+
+.menu-item:nth-child(2)::before {
+  width: 20px;
+  height: 20px;
+  left: 23px;
+  margin-right: 15px;
+  background-image: url("../icons/tubes.svg");
+}
+
+.menu-item:nth-child(3)::before {
+  width: 20px;
+  height: 20px;
+  left: 23px;
+  margin-right: 15px;
+  background-image: url("../icons/medicines.svg");
+}
+
+.menu-item:nth-child(4)::before {
+  width: 24px;
+  height: 21px;
+  left: 23px;
+  margin-right: 11px;
+  background-image: url("../icons/family.svg");
+}
+
+.menu-item:nth-child(5)::before {
+  width: 24px;
+  height: 24px;
+  left: 23px;
+  margin-right: 11px;
+  background-image: url("../icons/patient.svg");
+}
+
+.menu-item:nth-child(6)::before {
+  width: 18px;
+  height: 20px;
+  left: 26px;
+  margin-right: 14px;
+  background-image: url("../icons/bullet_list.svg");
+}
+
+.menu-item:nth-child(7)::before {
+  width: 21px;
+  height: 16px;
+  left: 26px;
+  margin-right: 12px;
+  background-image: url("../icons/crown_blue.svg");
+}
+
+.menu-item:hover {
+  margin-left: 0;
+  background: #eef3fb;
+  cursor: pointer;
+}
+
+.menu-text {
+  padding-left: 58px;
+}
+
+.menu-modal .show-modal {
+  visibility: visible;
+}
