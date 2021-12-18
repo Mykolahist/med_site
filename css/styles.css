@@ -78,6 +78,8 @@ header {
   border: 1px solid rgba(9, 87, 195, 0.07);
   border-radius: 20px;
   cursor: pointer;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-btn:hover,
@@ -176,6 +178,8 @@ header {
   border: 1px solid #eff1f6;
   border-radius: 50px;
   cursor: pointer;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tabs-btn:hover,
@@ -294,30 +298,23 @@ header {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .menu-modal {
-  min-width: 336px;
-  min-height: 304px;
-  position: absolute;
-  display: none;
-  top: 25px;
-  left: 0;
-  margin: 21px auto 14px;
-  padding-top: 18px;
-  padding-bottom: 29px;
-
-  background: #ffffff;
-  border: 1px solid #e7e8e8;
-  box-shadow: 2px 2px 15px rgba(82, 128, 190, 0.1);
-  border-radius: 8px;
-} */
+.appointment-btn:hover,
+.appointment-btn:focus {
+  transform: scale(1.03);
+}
 
 .menu-list {
   min-width: 336px;
   min-height: 304px;
   position: absolute;
   display: none;
+  /* opacity: 0;
+  pointer-events: none; */
+  /* top: -850%; */
   top: 25px;
   left: 0;
   margin: 21px auto 14px;
@@ -328,6 +325,8 @@ header {
   border: 1px solid #e7e8e8;
   box-shadow: 2px 2px 15px rgba(82, 128, 190, 0.1);
   border-radius: 8px;
+
+  transition: opacity, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-item {
@@ -339,6 +338,8 @@ header {
   line-height: 1.28;
 
   color: #333536;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-item:not(:last-child) {
@@ -423,4 +424,162 @@ header {
 
 .menu-list.show {
   display: block;
+  /* opacity: 1;
+  pointer-events: auto;
+  transform: translateY(104%); */
+}
+
+.premium-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  min-width: 152px;
+  margin-right: 126px;
+  padding: 4px 13px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.27;
+
+  color: #0957c3;
+
+  background: #ffffff;
+  border: 1px solid #0957c3;
+  border-radius: 20px;
+  cursor: pointer;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.premium-btn::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../icons/crown.svg");
+}
+
+.record-text {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 16px;
+  margin-bottom: 10px;
+
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.27;
+
+  color: #0957c3;
+}
+
+.card {
+  margin: 0 16px 24px;
+  padding: 12px 16px 23px;
+
+  background: #ffffff;
+  border: 1px solid rgba(33, 58, 133, 0.07);
+  box-shadow: 2px 2px 15px rgba(82, 128, 190, 0.1);
+  border-radius: 8px;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.status-time {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.82;
+
+  color: #747578;
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.82;
+
+  color: #47d7ac;
+}
+
+.timer::before {
+  margin-right: 5px;
+  content: "";
+  width: 11px;
+  height: 13px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../icons/bell.svg");
+}
+
+.status-price {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.82;
+
+  color: #333536;
+}
+
+.doctor-info {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+}
+
+.doctor-picture {
+  display: flex;
+  flex-direction: row;
+  margin-right: 16px;
+}
+
+.doctorx::before {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 75px;
+  margin-right: 16px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../icons/line.svg");
+}
+
+.doctorx {
+  display: flex;
+  flex-direction: row;
+}
+.doctor-personal {
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-name {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.13;
+
+  text-decoration-line: underline;
+  color: #333336;
+}
+
+.doctor-position {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.82;
+
+  color: #747578;
 }
