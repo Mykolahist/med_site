@@ -16,7 +16,6 @@
         <img src="./icons/logo_mini.svg" alt="логотип сайту">
       </a>
       <button type="button" class="premium-btn">Premium підписка</button>
-      <!-- <img src="./icons/user.svg" alt="фото користувача" class="user"> -->
       <button type="button" class="more-btn"></button>
     </div>
   </header>
@@ -64,135 +63,403 @@
     <p class="record-text">У вас 27 записів</p>
   </div>
   <section class="content-container">
-    <div class="card">
-      <div class="record">
-        <span class="record-date">20.12.2020, 11:00</span>
-        <span class="response">залишити відгук</span>
-        <span class="record-price">550 грн</span>
-      </div>
-      <div class="doctor-info">
-        <img src="./icons/ico_doctor.svg" alt="іконка доктора" class="doctor-picture">
-        <div class="doctor-group">
-          <div class="doctor-personal">
-            <h2 class="doctor-name">Нечипоренко Анна Володимирівна</h2>
-            <p class="doctor-position">Невролог, ендокринолог</p>
+    <ul class="card-list">
+      <li class="card">
+        <div class="card-top">
+          <div class="record">
+            <span class="record-date">20.12.2020, 11:00</span>
+            <span class="response">залишити відгук</span>
+            <span class="record-price">550 грн</span>
           </div>
-        </div>
-      </div>
-      <p class="doctor-location">
-        <span class="location-title">Клініка «Вихідного дня»,</span> 
-        вул. Велика Васильківська, 123
-      </p>
-      <ul class="status">
-        <li class="status-item">Створений</li>
-        <li class="status-item">В роботі</li>
-        <li class="status-item">Ви записані</li>
-        <li class="status-item">Відвіданий</li>
-      </ul>
-      <button type="button" class="details-btn">Детальніше</button>
-    </div>
-    <div class="card">
-      <div class="record">
-        <span class="record-date">20.12.2020, 11:00</span>
-        <span class="response">залишити відгук</span>
-        <span class="record-price">550 грн</span>
-      </div>
-      <div class="doctor-info">
-        <img src="./icons/ico_doctor.svg" alt="іконка доктора" class="doctor-picture">
-        <div class="doctor-group">
-          <div class="doctor-personal">
-            <h2 class="doctor-name">Нечипоренко Анна Володимирівна</h2>
-            <p class="doctor-position">Невролог, ендокринолог</p>
+          <div class="doctor-info">
+            <img src="./icons/ico_doctor.svg" alt="іконка доктора" class="doctor-picture">
+            <div class="doctor-group">
+              <div class="doctor-personal">
+                <h2 class="doctor-name">Нечипоренко Анна Володимирівна</h2>
+                <p class="doctor-position">Невролог, ендокринолог</p>
+              </div>
+            </div>
           </div>
+          <p class="doctor-location">
+            <span class="location-title">Клініка «Вихідного дня»,</span>
+            вул. Велика Васильківська, 123
+          </p>
+          <svg class="route">
+            <use href="../icons/sprite.svg#icon-route"></use>
+          </svg>
+          <ul class="status">
+            <li class="status-item">Створений</li>
+            <li class="status-item">В роботі</li>
+            <li class="status-item">Ви записані</li>
+            <li class="status-item">Відвіданий</li>
+          </ul>
+          <button type="button" class="details-btn">Детальніше</button>
         </div>
-      </div>
-      <p class="doctor-location">
-        <span class="location-title">Клініка «Вихідного дня»,</span>
-        вул. Велика Васильківська, 123
-      </p>
-      <ul class="status">
-        <li class="status-item">Створений</li>
-        <li class="status-item">В роботі</li>
-        <li class="status-item">Ви записані</li>
-      </ul>
-      <button type="button" class="details-btn">Детальніше</button>
-    </div>
-    <div class="card">
-      <div class="record">
-        <span class="record-date">20.12.2020, 11:00</span>
-        <span class="response">залишити відгук</span>
-        <span class="record-price">550 грн</span>
-      </div>
-      <div class="doctor-info">
-        <img src="./icons/ico_doctor.svg" alt="іконка доктора" class="doctor-picture">
-        <div class="doctor-group">
-          <div class="doctor-personal">
-            <h2 class="doctor-name">Нечипоренко Анна Володимирівна</h2>
-            <p class="doctor-position">Невролог, ендокринолог</p>
+        <div class="card-bottom">
+          <div class="card-bottom-wraper">
+            <h2 class="card-bottom-title">Послуги</h2>
+            <div class="initial-reception">
+              <span>Первинний прийом</span>
+              <span>870 грн</span>
+            </div>
+            <div class="treatment-control">
+              <span>Контроль ефективності <br>
+                лікування</span>
+              <span>265 грн</span>
+            </div>
+            <div class="card-bottom-doctor">
+              <span>Рудиніченко О. М.</span>
+            </div>
+            <div class="card-bottom-price">
+              <span class="">Ціна послуги</span>
+              <span class="">870 грн</span>
+            </div>
+            <div class="line"></div>
+            <div class="rank">
+              <ul class="star-list">
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+              </ul>
+              <span class="rank-date">25.11.2021</span>
+            </div>
+            <div class="suggestion">
+              <span class="suggestion-text">Рекомендую</span>
+            </div>
+            <div class="feedback">
+              <span class="">Анна Володимирівна, дякую за кваліфіковану допомогу. Почуваю себе чудесно!</span>
+            </div>
+            <div class="line"></div>
+            <div class="repeat">
+              <span class="repeat-number">ID 34568</span>
+              <button type="button" class="repeat-btn">Повторити прийом</button>
+            </div>
           </div>
+          <button type="button" class="less-btn">Приховати</button>
         </div>
-      </div>
-      <p class="doctor-location">
-        <span class="location-title">Клініка «Вихідного дня»,</span>
-        вул. Велика Васильківська, 123
-      </p>
-      <ul class="status">
-        <li class="status-item">Створений</li>
-        <li class="status-item">В роботі</li>
-      </ul>
-      <button type="button" class="details-btn">Детальніше</button>
-    </div>
-    <div class="card">
-      <div class="record">
-        <span class="record-date">20.12.2020, 11:00</span>
-        <span class="response">залишити відгук</span>
-        <span class="record-price">550 грн</span>
-      </div>
-      <div class="doctor-info">
-        <img src="./icons/ico_doctor.svg" alt="іконка доктора" class="doctor-picture">
-        <div class="doctor-group">
-          <div class="doctor-personal">
-            <h2 class="doctor-name">Нечипоренко Анна Володимирівна</h2>
-            <p class="doctor-position">Невролог, ендокринолог</p>
+      </li>
+      <li class="card">
+        <div class="card-top">
+          <div class="record">
+            <span class="record-date">20.12.2020, 11:00</span>
+            <span class="response">залишити відгук</span>
+            <span class="record-price">550 грн</span>
           </div>
-        </div>
-      </div>
-      <p class="doctor-location">
-        <span class="location-title">Клініка «Вихідного дня»,</span>
-        вул. Велика Васильківська, 123
-      </p>
-      <ul class="status">
-        <li class="status-item">Створений</li>
-      </ul>
-      <button type="button" class="details-btn">Детальніше</button>
-    </div>
-    <div class="card">
-      <div class="record">
-        <span class="record-date">20.12.2020, 11:00</span>
-        <span class="record-price">550 грн</span>
-      </div>
-      <div class="doctor-info">
-        <img src="./icons/ico_doctor.svg" alt="іконка доктора" class="doctor-picture">
-        <div class="doctor-group">
-          <div class="doctor-personal">
-            <h2 class="doctor-name">Нечипоренко Анна Володимирівна</h2>
-            <p class="doctor-position">Невролог, ендокринолог</p>
+          <div class="doctor-info">
+            <img src="./icons/ico_doctor.svg" alt="іконка доктора" class="doctor-picture">
+            <div class="doctor-group">
+              <div class="doctor-personal">
+                <h2 class="doctor-name">Нечипоренко Анна Володимирівна</h2>
+                <p class="doctor-position">Невролог, ендокринолог</p>
+              </div>
+            </div>
           </div>
+          <p class="doctor-location">
+            <span class="location-title">Клініка «Вихідного дня»,</span>
+            вул. Велика Васильківська, 123
+          </p>
+          <svg class="route">
+            <use href="../icons/sprite.svg#icon-route"></use>
+          </svg>
+          <ul class="status">
+            <li class="status-item">Створений</li>
+            <li class="status-item">В роботі</li>
+            <li class="status-item">Ви записані</li>
+          </ul>
+          <button type="button" class="details-btn">Детальніше</button>
         </div>
-      </div>
-      <p class="doctor-location">
-        <span class="location-title">Клініка «Вихідного дня»,</span>
-        вул. Велика Васильківська, 123
-      </p>
-      <ul class="status">
-        <li class="status-item">Створений</li>
-        <li class="status-item">В роботі</li>
-        <li class="status-item">Ви записані</li>
-        <li class="status-item">Відвіданий</li>
-      </ul>
-      <button type="button" class="details-btn">Детальніше</button>
-    </div>
+        <div class="card-bottom">
+          <div class="card-bottom-wraper">
+            <h2 class="card-bottom-title">Послуги</h2>
+            <div class="initial-reception">
+              <span>Первинний прийом</span>
+              <span>870 грн</span>
+            </div>
+            <div class="treatment-control">
+              <span>Контроль ефективності <br>
+                лікування</span>
+              <span>265 грн</span>
+            </div>
+            <div class="card-bottom-doctor">
+              <span>Рудиніченко О. М.</span>
+            </div>
+            <div class="card-bottom-price">
+              <span class="">Ціна послуги</span>
+              <span class="">870 грн</span>
+            </div>
+            <div class="line"></div>
+            <div class="rank">
+              <ul class="star-list">
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+              </ul>
+              <span class="rank-date">25.11.2021</span>
+            </div>
+            <div class="suggestion">
+              <span class="suggestion-text">Рекомендую</span>
+            </div>
+            <div class="feedback">
+              <span class="">Анна Володимирівна, дякую за кваліфіковану допомогу. Почуваю себе чудесно!</span>
+            </div>
+            <div class="line"></div>
+            <div class="repeat">
+              <span class="repeat-number">ID 34568</span>
+              <button type="button" class="repeat-btn">Повторити прийом</button>
+            </div>
+          </div>
+          <button type="button" class="less-btn">Приховати</button>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card-top">
+          <div class="record">
+            <span class="record-date">20.12.2020, 11:00</span>
+            <span class="response">залишити відгук</span>
+            <span class="record-price">550 грн</span>
+          </div>
+          <div class="doctor-info">
+            <img src="./icons/ico_doctor.svg" alt="іконка доктора" class="doctor-picture">
+            <div class="doctor-group">
+              <div class="doctor-personal">
+                <h2 class="doctor-name">Нечипоренко Анна Володимирівна</h2>
+                <p class="doctor-position">Невролог, ендокринолог</p>
+              </div>
+            </div>
+          </div>
+          <p class="doctor-location">
+            <span class="location-title">Клініка «Вихідного дня»,</span>
+            вул. Велика Васильківська, 123
+          </p>
+          <svg class="route">
+            <use href="../icons/sprite.svg#icon-route"></use>
+          </svg>
+          <ul class="status">
+            <li class="status-item">Створений</li>
+            <li class="status-item">В роботі</li>
+          </ul>
+          <button type="button" class="details-btn">Детальніше</button>
+        </div>
+        <div class="card-bottom">
+          <div class="card-bottom-wraper">
+            <h2 class="card-bottom-title">Послуги</h2>
+            <div class="initial-reception">
+              <span>Первинний прийом</span>
+              <span>870 грн</span>
+            </div>
+            <div class="treatment-control">
+              <span>Контроль ефективності <br>
+                лікування</span>
+              <span>265 грн</span>
+            </div>
+            <div class="card-bottom-doctor">
+              <span>Рудиніченко О. М.</span>
+            </div>
+            <div class="card-bottom-price">
+              <span class="">Ціна послуги</span>
+              <span class="">870 грн</span>
+            </div>
+            <div class="line"></div>
+            <div class="rank">
+              <ul class="star-list">
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+              </ul>
+              <span class="rank-date">25.11.2021</span>
+            </div>
+            <div class="suggestion">
+              <span class="suggestion-text">Рекомендую</span>
+            </div>
+            <div class="feedback">
+              <span class="">Анна Володимирівна, дякую за кваліфіковану допомогу. Почуваю себе чудесно!</span>
+            </div>
+            <div class="line"></div>
+            <div class="repeat">
+              <span class="repeat-number">ID 34568</span>
+              <button type="button" class="repeat-btn">Повторити прийом</button>
+            </div>
+          </div>
+          <button type="button" class="less-btn">Приховати</button>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card-top">
+          <div class="record">
+            <span class="record-date">20.12.2020, 11:00</span>
+            <span class="response">залишити відгук</span>
+            <span class="record-price">550 грн</span>
+          </div>
+          <div class="doctor-info">
+            <img src="./icons/ico_doctor.svg" alt="іконка доктора" class="doctor-picture">
+            <div class="doctor-group">
+              <div class="doctor-personal">
+                <h2 class="doctor-name">Нечипоренко Анна Володимирівна</h2>
+                <p class="doctor-position">Невролог, ендокринолог</p>
+              </div>
+            </div>
+          </div>
+          <p class="doctor-location">
+            <span class="location-title">Клініка «Вихідного дня»,</span>
+            вул. Велика Васильківська, 123
+          </p>
+          <svg class="route">
+            <use href="../icons/sprite.svg#icon-route"></use>
+          </svg>
+          <ul class="status">
+            <li class="status-item">Створений</li>
+          </ul>
+          <button type="button" class="details-btn">Детальніше</button>
+        </div>
+        <div class="card-bottom">
+          <div class="card-bottom-wraper">
+            <h2 class="card-bottom-title">Послуги</h2>
+            <div class="initial-reception">
+              <span>Первинний прийом</span>
+              <span>870 грн</span>
+            </div>
+            <div class="treatment-control">
+              <span>Контроль ефективності <br>
+                лікування</span>
+              <span>265 грн</span>
+            </div>
+            <div class="card-bottom-doctor">
+              <span>Рудиніченко О. М.</span>
+            </div>
+            <div class="card-bottom-price">
+              <span class="">Ціна послуги</span>
+              <span class="">870 грн</span>
+            </div>
+            <div class="line"></div>
+            <div class="rank">
+              <ul class="star-list">
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+              </ul>
+              <span class="rank-date">25.11.2021</span>
+            </div>
+            <div class="suggestion">
+              <span class="suggestion-text">Рекомендую</span>
+            </div>
+            <div class="feedback">
+              <span class="">Анна Володимирівна, дякую за кваліфіковану допомогу. Почуваю себе чудесно!</span>
+            </div>
+            <div class="line"></div>
+            <div class="repeat">
+              <span class="repeat-number">ID 34568</span>
+              <button type="button" class="repeat-btn">Повторити прийом</button>
+            </div>
+          </div>
+          <button type="button" class="less-btn">Приховати</button>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card-top">
+          <div class="record">
+            <span class="record-date">20.12.2020, 11:00</span>
+            <span class="record-price">550 грн</span>
+          </div>
+          <div class="doctor-info">
+            <img src="./icons/ico_doctor.svg" alt="іконка доктора" class="doctor-picture">
+            <div class="doctor-group">
+              <div class="doctor-personal">
+                <h2 class="doctor-name">Нечипоренко Анна Володимирівна</h2>
+                <p class="doctor-position">Невролог, ендокринолог</p>
+              </div>
+            </div>
+          </div>
+          <p class="doctor-location">
+            <span class="location-title">Клініка «Вихідного дня»,</span>
+            вул. Велика Васильківська, 123
+          </p>
+          <svg class="route">
+            <use href="../icons/sprite.svg#icon-route"></use>
+          </svg>
+          <ul class="status">
+            <li class="status-item">Створений</li>
+            <li class="status-item">В роботі</li>
+            <li class="status-item">Ви записані</li>
+            <li class="status-item">Відвіданий</li>
+          </ul>
+          <button type="button" class="details-btn">Детальніше</button>
+        </div>
+        <div class="card-bottom">
+          <div class="card-bottom-wraper">
+            <h2 class="card-bottom-title">Послуги</h2>
+            <div class="initial-reception">
+              <span>Первинний прийом</span>
+              <span>870 грн</span>
+            </div>
+            <div class="treatment-control">
+              <span>Контроль ефективності <br>
+                лікування</span>
+              <span>265 грн</span>
+            </div>
+            <div class="card-bottom-doctor">
+              <span>Рудиніченко О. М.</span>
+            </div>
+            <div class="card-bottom-price">
+              <span class="">Ціна послуги</span>
+              <span class="">870 грн</span>
+            </div>
+            <div class="line"></div>
+            <div class="rank">
+              <ul class="star-list">
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+                <li class="star-item"><img src="./icons/star.svg" alt="зірка"></li>
+              </ul>
+              <span class="rank-date">25.11.2021</span>
+            </div>
+            <div class="suggestion">
+              <span class="suggestion-text">Рекомендую</span>
+            </div>
+            <div class="feedback">
+              <span class="">Анна Володимирівна, дякую за кваліфіковану допомогу. Почуваю себе чудесно!</span>
+            </div>
+            <div class="line"></div>
+            <div class="repeat">
+              <span class="repeat-number">ID 34568</span>
+              <button type="button" class="repeat-btn">Повторити прийом</button>
+            </div>
+          </div>
+          <button type="button" class="less-btn">Приховати</button>
+        </div>
+      </li>
+    </ul>
   </section>
-  <script src="./dropdown.js"></script>
+  <div class="backdrop">
+    <div class="modal">
+      <div class="modal-head">
+        <img src="./icons/logo_mini.svg" alt="логотип сайту">
+        <span class="modal-title">Запис</span>
+        <button class="close-btn"></button>
+      </div>
+      <div class="modal-content">
+        <img src="./icons/smile.svg" alt="посмішка в хмарах" class="modal-picture">
+        <div class="modal-text">
+          <span>Вітаємо! Ви повторно записались
+        на прийом</span>
+        </div>
+        <div class="modal-time">
+          <span>7 сек</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/dropdown.js" type="module"></script>
+  <script src="./js/bottomCard.js" type="module"></script>
+  <script src="./js/modal.js" type="module"></script>
 </body>
 </html>
