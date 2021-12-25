@@ -282,18 +282,34 @@ p {
   transform: translateY(104%); */
 }
 
+.tabs-container {
+  max-width: 360px;
+  margin: 0 auto 21px;
+  overflow: hidden;
+}
+
 .tabs {
   display: flex;
-  margin-bottom: 21px;
   padding-left: 16px;
-  padding-right: 16px;
 
   background: #f4f7fa;
 }
 
+/* .tabs-item:nth-child(1),
+.tabs-item:nth-child(2) {
+  min-width: 111px;
+} */
+
+/* .tabs-item:not(:last-child) {
+  margin-right: 10px;
+} */
+
 .tabs-btn {
   min-width: 84px;
-  padding: 9px 23px;
+  white-space: nowrap;
+  height: 35px;
+  margin-right: 10px;
+  padding: 8px 19px;
 
   font-weight: 400;
   font-size: 13px;
@@ -311,10 +327,6 @@ p {
 .tabs-btn:hover,
 .tabs-btn:focus {
   border: 1px solid #0957c3;
-}
-
-.tabs-item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .date {
